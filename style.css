@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+.maindiv{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   /* background:linear-gradient(-45deg,#661166,#c928ff)*/
+   background: url(BG.jpg);
+    
+}
+.centerdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 200px;
+    width: 350px;
+    border-radius: 16px;
+   /* background: linear-gradient(45deg,#1d81c9,#8929ff);*/
+    background: linear-gradient(122.17deg, rgba(205, 205, 205, 0.9) , rgba(205, 205, 205, 0.012));
+    backdrop-filter: blur(5px);
+
+    padding:30px;
+    box-shadow: 0 100px 80px rgba(5, 50, 148, 0.306),
+                0 20px 10px rgba(22, 50, 104, 0.358);
+}
+.topdiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.centerdiv .topdiv .photo{
+    height: 80px;
+
+}
+.centerdiv .topdiv .photo:hover{
+    transform: rotate(45deg);
+    transition-duration: 1s;
+
+}
+.bottomdiv{
+    z-index: 2;
+}
+.centerdiv .topdiv h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.centerdiv .bottomdiv h2{
+    color: rgb(132, 1, 1);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.centerdiv::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+   background: linear-gradient(45deg,#1d81c9,#8929ff);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 16px;
+    clip-path: ellipse(42% 40% at 87% 17%);
+}
+.centerdiv:hover{
+    box-shadow: 0 100px 80px rgba(148, 5, 5, 0.306),
+                0 20px 10px rgba(255, 2, 2, 0.358);
+}
